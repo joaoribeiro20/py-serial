@@ -1,6 +1,7 @@
 import serial #Importa a biblioteca
 
 while True: #Loop para a conexão com o Arduino
+    print("tentanto conectar")
     try:  #Tenta se conectar, se conseguir, o loop se encerra
         arduino = serial.Serial('COM4', 9600)
         print('Arduino conectado')
